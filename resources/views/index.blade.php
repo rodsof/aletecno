@@ -16,7 +16,7 @@ AleTecno
 
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link href="{{ asset('https://fonts.googleapis.com/css?family=Rubik:300,400,500') }}" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
@@ -26,6 +26,14 @@ AleTecno
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <!-- Main css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <script async src="{{ asset('https://www.googletagmanager.com/gtag/js?id=UA-162438537-1') }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-162438537-1');
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -45,7 +53,7 @@ AleTecno
                                 <li class="nav-item"> <a class="nav-link" href="#gallery">GALERIA</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#pricing">PRECIOS</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#contact">CONTACTO</a> </li>
-                                <li class="nav-item"><a href="#" class="btn btn-primary my-3 my-sm-0 ml-lg-3">
+                                <li class="nav-item"><a  href={{'/comprar'}} class="btn btn-primary my-3 my-sm-0 ml-lg-3">
                                 <span class="ti-shopping-cart ti-1x mr-1"></span>
                                 Comprar ya</a></li>
                             </ul>
@@ -70,7 +78,7 @@ AleTecno
             <div>
                 <h2 class="mainTitle">TERMÓMETROS INFRARROJOS CLÍNICOS DE FRENTE SIN CONTACTO</h2>
                 <p class="mb-4 mainDescription">El termómetro IR clínico de frente sin contacto está especialmente diseñado para tomar la temperatura corporal de una persona independientemente de la temperatura ambiente.</p>
-                <a href="#" class="btn btn-primary">
+                <a href={{'/comprar'}} class="btn btn-primary">
                 <span class="ti-shopping-cart ti-1x mr-1"></span>
                 Comprar ya</a></div>
         </div>
@@ -183,6 +191,7 @@ AleTecno
     </div>
     <!-- // end .section -->
 
+
     <div class="section light-bg">
         <div class="container">
             <div class="section-title">
@@ -203,23 +212,23 @@ AleTecno
                     <div class="d-flex flex-column flex-lg-row">
                         <div>
                             <h2></h2>
-                            <p class="lead">Color de carcasa: Azul</p>
+                            <p class="lead"> Color de carcasa: Azul</p>
                             </p>
-                            <p> Se puede optar entre ºC o ºF & detección de calor de la frente
+                            <p> - Se puede optar entre ºC o ºF & detección de calor de la frente
                             </p>
-                            <p> Se puede optar entre temperatura de Cuerpo o Superficie Body and Surface temperature
+                            <p>- Se puede optar entre temperatura de Cuerpo o Superficie Body and Surface temperature
                             </p>
-                            <p> Configurar el valor de la alarma y su sonido
+                            <p>- Configurar el valor de la alarma y su sonido
                             </p>
-                            <p> Memoriza las últimas 32 medidas
+                            <p>- Memoriza las últimas 32 medidas
                             </p>
-                            <p>Retención automática de datos & apagado automático
+                            <p>- Retención automática de datos & apagado automático
                             </p>
-                            <p>Selección de rango automática
+                            <p>- Selección de rango automática
                             </p>
-                            <p> Resolución de Pantalla 0.1ºC (0.1ºF)
+                            <p>- Resolución de Pantalla 0.1ºC (0.1ºF)
                             </p>
-                            <p>Pantalla LCD retroiluminada
+                            <p>- Pantalla LCD retroiluminada
                             </p>
                         </div>
                     </div>
@@ -228,29 +237,31 @@ AleTecno
                     <div class="d-flex flex-column flex-lg-row">
                     <div>
                             <h2></h2>
-                            <p class="lead">Color de carcasa: Púrpura</p>
+                            <p class="lead"> Color de carcasa: Púrpura</p>
                             </p>
-                            <p> Se puede optar entre ºC o ºF & detección de calor de la frente
+                            <p> - Se puede optar entre ºC o ºF & detección de calor de la frente
                             </p>
-                            <p> Se puede optar entre temperatura de Cuerpo o Superficie Body and Surface temperature
+                            <p>- Se puede optar entre temperatura de Cuerpo o Superficie Body and Surface temperature
                             </p>
-                            <p> Configurar el valor de la alarma y su sonido
+                            <p>- Configurar el valor de la alarma y su sonido
                             </p>
-                            <p> Memoriza las últimas 32 medidas
+                            <p>- Memoriza las últimas 32 medidas
                             </p>
-                            <p>Retención automática de datos & apagado automático
+                            <p>- Retención automática de datos & apagado automático
                             </p>
-                            <p>Selección de rango automática
+                            <p>- Selección de rango automática
                             </p>
-                            <p> Resolución de Pantalla 0.1ºC (0.1ºF)
+                            <p>- Resolución de Pantalla 0.1ºC (0.1ºF)
                             </p>
-                            <p>Pantalla LCD retroiluminada
+                            <p>- Pantalla LCD retroiluminada
                             </p>
                         </div>
                     </div>
                 </div>
         </div>
     </div>
+    <!-- // end .section -->
+
     <!-- // end .section -->
 
 
@@ -297,7 +308,7 @@ AleTecno
                         <div class="list-group-item"><del></del></div>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Comprar</a>
+                        <a  href={{'/comprar'}} class="btn btn-primary btn-lg btn-block">Comprar</a>
                     </div>
                 </div>
                 <div class="card pricing">
@@ -313,7 +324,7 @@ AleTecno
                         <div class="list-group-item"></div>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="btn btn-primary btn-lg btn-block">Comprar</a>
+                        <a href={{'/comprar'}} class="btn btn-primary btn-lg btn-block">Comprar</a>
                     </div>
                 </div>
               
@@ -333,15 +344,9 @@ AleTecno
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
-                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> direccion aca</p>
                     <div class=" d-block d-sm-inline-block">
                         <p class="mb-2">
-                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:support@mobileapp.com">agregar un mail</a>
-                        </p>
-                    </div>
-                    <div class="d-block d-sm-inline-block">
-                        <p class="mb-0">
-                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:">agregar un telfono</a>
+                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:ventas@termometrosdigitales.com.ar">ventas@termometrosdigitales.com.ar</a>
                         </p>
                     </div>
 
@@ -361,17 +366,17 @@ AleTecno
     <!-- // end .section -->
     <footer class="my-5 text-center">
         <small>
-            <a href="#" class="m-2">En desarrollo</a>
+            <a href="#" class="m-2">© 2020 </a>
         </small>
     </footer>
 
     <!-- jQuery and Bootstrap -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.bundle.min.js' ) }}"></script>
     <!-- Plugins JS -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 
 </body>
 
